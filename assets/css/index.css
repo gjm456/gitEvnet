@@ -12,16 +12,18 @@
   margin-left: 20px;
 }
 
-iframe {
+#ifr {
   width: 100%;
   height: 100%;
 }
 
 .layui-body {
+  /* 隐藏主内容区滚动条 */
   overflow: hidden;
 }
 
 a {
+  /* 强制清除a链接的动画效果 */
   transition: none !important;
 }
 
@@ -41,7 +43,7 @@ a {
   width: 40px;
   height: 40px;
 }
-
+/*  文字头像*/
 .text-avatar {
   display: inline-block;
   width: 40px;
