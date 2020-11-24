@@ -32,7 +32,7 @@ $(function () {
 
 
     // 4.注册表单提交事件（登录）
-    $('#form_login').submit(function (e) {
+    $('#formLogin').submit(function (e) {
         e.preventDefault();
         // a 获取登录表单数据
         let dataStr = $(this).serialize();
