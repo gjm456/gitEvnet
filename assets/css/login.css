@@ -1,5 +1,6 @@
-html,
-body {
+/* 设置整个页面的样式 背景图 */
+
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -7,6 +8,8 @@ body {
   background: url('/assets/images/login_bg.jpg') no-repeat center;
   background-size: cover;
 }
+
+/* 登录框的样式设置 */
 
 .loginAndRegBox {
   width: 400px;
@@ -17,6 +20,8 @@ body {
   top: 50%;
   transform: translate(-50%, -50%);
 }
+
+/* logo部分 */
 
 .title-box {
   height: 60px;
@@ -40,15 +45,21 @@ body {
   font-size: 12px;
 }
 
+/* 登录框父元素添加相对定位 */
+
 .layui-form-item {
   position: relative;
 }
+
+/* 登录框图标设置 */
 
 .layui-icon {
   position: absolute;
   left: 10px;
   top: 10px;
 }
+
+/* 距离登录框左边的距离 */
 
 .layui-input {
   padding-left: 32px;
