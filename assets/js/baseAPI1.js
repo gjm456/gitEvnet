@@ -10,6 +10,7 @@ $.ajaxPrefilter(function (ajaxOpt) {
         }
     }
     // 3.为所有的ajax请求 统一 配置complete 事件函数
+    //   获取 响应报文之后，先执行 success或error回调函数，最后执行 complete回调函数
     ajaxOpt.complete = function (res) {
         console.log('complete');
         if (res.responseJSON.status == 1 && res.responseJSON.message == '身份认证失败！') {
@@ -18,7 +19,7 @@ $.ajaxPrefilter(function (ajaxOpt) {
                 time: 1500
             }, function () {
                 localStorage.removeItem('token');
-                location.href = '/login.html';
+                window.top.location.href = '/login.html';
             })
         }
         console.log(res.responseJSON);
