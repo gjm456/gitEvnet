@@ -11,6 +11,7 @@ $(function () {
         $('.reg-box').hide();
     })
 
+
     //2.为layui添加 登录校验规则
     layui.form.verify({
         // 定义了一个叫做pwd消炎规则
